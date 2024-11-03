@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | HelPhin</title>
+    <link rel="icon" href="assets/images/logo-short.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body class="font-sans antialiased text-white bg-x-blue">
+    <!-- Header -->
+    <header
+      class="sticky top-0 bg-x-navy z-40 flex items-center justify-between gap-4 px-4 sm:px-12 py-4 border-b-2 border-x-yellow"
+    >
+      <a href="#">
+        <img
+          src="./assets/images/logo.png"
+          alt="logo"
+          class="h-10"
+        />
+        <span class="sr-only">helPhin</span>
+      </a>
+
+      <button
+        id="mobile-nav-trigger"
+        class="block sm:hidden rounded-md p-1.5 hover:bg-x-blue"
+      >
+        <img src="./assets/images/icon-menu.png" alt="menu" class="h-6" />
+        <span class="sr-only">Menu</span>
+      </button>
+
+      <div class="items-center gap-6 hidden sm:flex 2xl:text-xl">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#album">Album</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <!-- Mobile navigation -->
+    <aside
+      id="mobile-nav"
+      class="fixed inset-0 z-30 top-[4.5rem] -translate-x-full p-4 flex flex-col items-start gap-6 text-xl font-semibold bg-x-navy/80 backdrop-blur flex-grow overflow-y-auto"
+    >
+      <a href="#">Home</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#album">Album</a>
+      <a href="#contact">Contact</a>
+    </aside>
+
+    <!-- contact us -->
+    <section class="relative flex-1 bg-x-lightblue grid pb-24 min-h-screen overflow-hidden">
+        <img
+            src="./assets/images/hero-vector.png"
+            alt="hero"
+            class="absolute inset-0 w-full h-full object-cover"
+        />
+        <img
+            src="./assets/images/hero-vector-divider.png"
+            alt="hero"
+            class="absolute inset-0 w-full h-full object-cover sm:object-fill scale-[2.5] sm:scale-100"
+        />
+
+        <div class="relative mx-10 mt-10 rounded-[3rem] flex items-center justify-evenly gap-4 p-8 lg:px-16 bg-x-blue">
+            <div class="flex-1 space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12 2xl:space-y-20 bg-x-blue ">
+                <div class="value rounded-[3rem] xl:text-lg 2xl:text-xl text-center sm:text-left xl:max-w-2xl 2xl:max-w-3xl">
+                    <h1 class="text-2xl sm:text-3xl mb-2"> Info </h1>
+                    <h2 class="text-xm sm:text-2xl mb-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, esse? </h2>
+                    <div class="flex flex-col items-start gap-4 break-words">
+                        <!-- email -->
+                        <div class="flex items-center gap-2">
+                        <img
+                            src="./assets/images/icon-mail.png"
+                            alt="icon mail"
+                            class="h-10 sm:h-16"
+                        />
+                        <div class="space-y-1">
+                            <p class="text-xs sm:text-2xl">helphincorp@gmail.com</p>
+                        </div>
+                        </div>
+                        
+                        <!-- kontak -->
+                        <div class="flex items-center gap-2">
+                        <img
+                            src="./assets/images/icon-phone.png"
+                            alt="icon mail"
+                            class="h-10 sm:h-16"
+                        />
+                        <div class="space-y-1">
+                            <p class="text-xs sm:text-2xl">+62 851-3333-2553</p>
+                        </div>
+                        </div>
+                    
+                        <!-- lokasi -->
+                        <div class="flex items-center gap-2">
+                        <img
+                            src="./assets/images/icon-location.png"
+                            alt="icon mail"
+                            class="h-10 sm:h-16"
+                        />
+                        <div class="space-y-1">
+                            <p class="text-xs sm:text-2xl">Indonesia</p>
+                        </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="sm:hidden text-center max-w-xs mx-auto">
+                    <h1 class="text-xl sm:text-3xl mb-2"> Contact Us </h1>
+                    <h2 class="text-sm sm:text-2xl mb-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, esse? </h2>
+                    <label class="text-sm sm:text-2xl"> Nama Lengkap</label>
+                    <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="username1" placeholder="Nama Lengkap" style="color: black;">    
+                    <label class="text-sm sm:text-2xl"> Email</label>
+                    <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="email1" placeholder="Email" style="color: black;">    
+                    <label class="text-sm sm:text-2xl"> Pesan Anda</label>
+                    <input type="text" class="mb-4 shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="pesan1" placeholder="Pesan Anda" style="color: black;">    
+                    <a href="#" class="btn relative mx-auto flex justify-center">Kirim</a>    
+                </div>
+
+            </div>
+
+            <div class="flex-1 bg-x-blue py-10 p-4 hidden sm:block max-w-64 sm:max-w-xs md:max-w-sm lg:max-w-md xl:max-w-lg 2xl:max-w-2xl">
+                <h1 class="text-xl sm:text-3xl mb-2"> Contact Us </h1>
+                <h2 class="text-sm sm:text-2xl mb-4"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, esse? </h2>
+                <label class="text-sm sm:text-2xl"> Nama Lengkap</label>
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="username2" placeholder="Nama Lengkap" style="color: black;">    
+                <label class="text-sm sm:text-2xl"> Email</label>
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="email2" placeholder="Email" style="color: black;">    
+                <label class="text-sm sm:text-2xl"> Pesan Anda</label>
+                <input type="text" class="mb-4 shadow appearance-none border rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline" id="pesan2" placeholder="Pesan Anda" style="color: black;">    
+                <a href="#" class="btn relative mx-auto flex justify-center">Kirim</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="px-4 pt-6 pb-4 bg-x-navy mt-10">
+      <div class="max-w-4xl 2xl:max-w-6xl mx-auto space-y-4">
+        <div
+          class="flex flex-col sm:flex-row gap-6 items-center justify-evenly border-b-2 border-x-yellow pb-4"
+        >
+          <a href="#" class="flex-none">
+            <img src="./assets/images/logo-text.png" alt="logo" class="h-10" />
+            <span class="sr-only">helPhin</span>
+          </a>
+
+          <div class="flex items-center gap-4 flex-wrap break-words">
+            <div class="flex items-center gap-2">
+              <img
+                src="./assets/images/icon-mail.png"
+                alt="icon mail"
+                class="h-10"
+              />
+              <div class="space-y-1">
+                <h6 class="text-sm">Email Kami</h6>
+                <p class="text-xs">helphincorp@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <img
+                src="./assets/images/icon-phone.png"
+                alt="icon mail"
+                class="h-10"
+              />
+              <div class="space-y-1">
+                <h6 class="text-sm">Kontak Kami</h6>
+                <p class="text-xs">+62 851-3333-2553</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <img
+                src="./assets/images/icon-location.png"
+                alt="icon mail"
+                class="h-10"
+              />
+              <div class="space-y-1">
+                <h6 class="text-sm">Lokasi</h6>
+                <p class="text-xs">Indonesia</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 border-b-2 border-x-yellow pb-4"
+        >
+          <div class="flex flex-col justify-evenly gap-4">
+            <p class="text-sm">
+              Kalian bisa terhubung dengan kami melalui media sosial berikut ini
+            </p>
+
+            <div class="flex items-center gap-2 flex-wrap">
+              <a href="#">
+                <img
+                  src="./assets/images/icon-instagram.png"
+                  alt="icon instagram"
+                  class="h-10"
+                />
+                <span class="sr-only">Instagram</span>
+              </a>
+
+              <a href="#">
+                <img
+                  src="./assets/images/icon-facebook.png"
+                  alt="icon facebook"
+                  class="h-10"
+                />
+                <span class="sr-only">Facebook</span>
+              </a>
+
+              <a href="#">
+                <img
+                  src="./assets/images/icon-twitter.png"
+                  alt="icon twitter"
+                  class="h-10"
+                />
+                <span class="sr-only">Twitter</span>
+              </a>
+
+              <a href="#">
+                <img
+                  src="./assets/images/icon-tiktok.png"
+                  alt="icon tiktok"
+                  class="h-10"
+                />
+                <span class="sr-only">Tiktok</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="flex-1">
+              <h6 class="mb-2">Jelajahi</h6>
+              <ul class="space-y-1 text-sm">
+                <li>
+                  <a href="#">Tentang Kami</a>
+                </li>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex-1">
+              <h6 class="mb-2">Link Instan</h6>
+              <ul class="space-y-1 text-sm">
+                <li>
+                  <a href="#">Customer Service</a>
+                </li>
+                <li>
+                  <a href="contactUs.html">Hubungi Kami</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="md:place-self-center">
+            <h6 class="mb-2">Halaman Utilitas</h6>
+            <ul class="space-y-1 text-sm">
+              <li>
+                <a href="#">Perizinan</a>
+              </li>
+              <li>
+                <a href="privasi.html">Kebijakan & Privasi</a>
+              </li>
+              <li>
+                <a href="404.html">404 Page</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-xs text-center">
+          Copyright © helPhin | Designed by helPhin Disign Team
+        </p>
+      </div>
+    </footer>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
