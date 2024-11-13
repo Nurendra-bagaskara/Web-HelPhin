@@ -17,3 +17,22 @@ if (headerLogo) {
   });
 }
 
+const navbar = document.querySelector('.navbar');
+const teamSection = document.getElementById('team');
+
+// Fungsi untuk memeriksa posisi scroll
+function onScroll() {
+  const teamSectionTop = teamSection.getBoundingClientRect().top;
+  const navbarHeight = navbar ? navbar.offsetHeight : 0; // Gunakan 0 jika navbar tidak ada
+
+  // Jika bagian atas section team berada di bawah navbar, ubah background navbar
+  if (navbar && teamSectionTop <= navbarHeight) {
+    navbar.classList.add('active');
+  } else if (navbar) {
+    navbar.classList.remove('active');
+  }
+}
+
+// Tambahkan event listener pada scroll
+window.addEventListener('scroll', onScroll);
+
